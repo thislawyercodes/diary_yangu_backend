@@ -1,0 +1,1 @@
+from api.tests.auth_tests import *
