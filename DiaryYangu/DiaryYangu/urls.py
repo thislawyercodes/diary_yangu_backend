@@ -43,6 +43,8 @@ urlpatterns = [
          name='schema-redoc'), 
     path('admin/', admin.site.urls),
     path('auth/',include('api.urls.auth_urls')),
+    path('journal/',include('api.urls.journal_entries_urls')),
+
 
 ]
 
