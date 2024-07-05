@@ -18,9 +18,9 @@
 
 ---
 
-### Notes
+### Other TODOs
 - **Hosting:**
-  - Look for free tier hosting options ... vercel/a cpanel.
+  - Look for free tier hosting options.
 
 - **Tests:**
   - Tests for every view -auth tests are implemented and coverage uis 90%.
