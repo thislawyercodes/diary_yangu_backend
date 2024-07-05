@@ -14,6 +14,13 @@ class JournalEntrySerializer(serializers.ModelSerializer):
     class Meta:
         model = JournalEntry
         fields = ['id', 'title', 'content', 'created_at','categories']
+        
+        
+class CategorizeJournalSerializer(serializers.Serializer):
+    journal_entry_id = serializers.UUIDField()
+    categories = serializers.ListField(
+        child=serializers.UUIDField(), allow_empty=False
+    )
 
     
 
