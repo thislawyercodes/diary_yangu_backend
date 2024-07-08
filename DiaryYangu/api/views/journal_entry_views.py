@@ -12,7 +12,7 @@ from rest_framework import filters
 
 
 class CategoryListCreateAPIView(generics.ListCreateAPIView):
-    queryset = Category.objects.all()
+    queryset = Category.objects.all().order_by('-created_at')
     serializer_class = CategorySerializer
     permission_classes = [permissions.IsAuthenticated]
 
@@ -28,7 +28,7 @@ class CategoryListCreateAPIView(generics.ListCreateAPIView):
     
     
 class JournalEntryListCreateAPIView(generics.ListCreateAPIView):
-    queryset = JournalEntry.objects.all()
+    queryset = JournalEntry.objects.all().order_by('-created_at')
     serializer_class = JournalEntrySerializer
     permission_classes = [permissions.IsAuthenticated]
     filter_backends = [DjangoFilterBackend]

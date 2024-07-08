@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django_filters',
     'rest_framework_swagger',
     'drf_yasg',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -175,3 +176,5 @@ SWAGGER_SETTINGS = {
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
